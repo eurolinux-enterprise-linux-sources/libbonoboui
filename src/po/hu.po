@@ -1,0 +1,509 @@
+# Hungarian translation of libbonoboui.
+# Copyright (C) 2002, 2003, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the libbonoboui package.
+#
+# Emese Kovacs <emese@gnome.hu>, 2002.
+# Andras Timar <timar@gnome.hu>, 2003, 2004.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2004, 2005, 2006, 2008.
+# Laszlo Dvornik <dvornik@gnome.hu>, 2004, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: libbonoboui\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-13 21:46+0000\n"
+"PO-Revision-Date: 2008-02-26 00:16+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
+"Language-Team: Hungarian <gnome@fsf.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../bonobo/bonobo-canvas-item.c:680
+msgid "corba factory"
+msgstr "corba factory"
+
+#: ../bonobo/bonobo-canvas-item.c:681
+msgid "The factory pointer"
+msgstr "A factory mutató"
+
+#: ../bonobo/bonobo-canvas-item.c:690
+msgid "corba UI container"
+msgstr "corba UI konténer"
+
+#: ../bonobo/bonobo-canvas-item.c:691
+msgid "The User interface container"
+msgstr "A felhasználói felület konténere"
+
+#: ../bonobo/bonobo-dock-item-grip.c:255
+msgid "Dock the toolbar"
+msgstr "Az eszköztár dokkolása"
+
+#: ../bonobo/bonobo-dock-item-grip.c:256
+msgid "Undock the toolbar"
+msgstr "Az eszköztár dokkolásának megszüntetése"
+
+#: ../bonobo/bonobo-dock-item.c:228 ../bonobo/bonobo-dock-item.c:229
+#: ../bonobo/bonobo-ui-toolbar.c:1161
+msgid "Shadow type"
+msgstr "Árnyék típusa"
+
+#: ../bonobo/bonobo-dock-item.c:239 ../bonobo/bonobo-dock-item.c:240
+#: ../bonobo/bonobo-ui-toolbar.c:1105 ../bonobo/bonobo-ui-toolbar.c:1106
+msgid "Orientation"
+msgstr "Irány"
+
+#: ../bonobo/bonobo-dock-item.c:250 ../bonobo/bonobo-dock-item.c:251
+#: ../bonobo/bonobo-ui-toolbar.c:1124 ../bonobo/bonobo-ui-toolbar.c:1125
+msgid "Preferred width"
+msgstr "Előnyben részesített szélesség"
+
+#: ../bonobo/bonobo-dock-item.c:259 ../bonobo/bonobo-dock-item.c:260
+#: ../bonobo/bonobo-ui-toolbar.c:1133 ../bonobo/bonobo-ui-toolbar.c:1134
+msgid "Preferred height"
+msgstr "Előnyben részesített magasság"
+
+#: ../bonobo/bonobo-file-selector-util.c:357
+msgid "Select a file to open"
+msgstr "A megnyitandó fájl kiválasztása"
+
+#: ../bonobo/bonobo-file-selector-util.c:385
+msgid "Select files to open"
+msgstr "A megnyitandó fájlok kiválasztása"
+
+#: ../bonobo/bonobo-file-selector-util.c:414
+msgid "Select a filename to save"
+msgstr "A mentendő fájl nevének kiválasztása"
+
+#: ../bonobo/bonobo-plug.c:423
+msgid "Event Forwarding"
+msgstr "Eseménytovábbítás"
+
+#: ../bonobo/bonobo-plug.c:424
+msgid "Whether X events should be forwarded"
+msgstr "Továbbítsa-e az X-eseményeket"
+
+#: ../bonobo/bonobo-selector-widget.c:297 ../bonobo/bonobo-window.c:344
+#: ../tools/browser/component-details.c:114
+#: ../tools/browser/component-list.c:378
+msgid "Name"
+msgstr "Név"
+
+#: ../bonobo/bonobo-selector-widget.c:319
+#: ../tools/browser/component-details.c:115
+msgid "Description"
+msgstr "Leírás"
+
+#: ../bonobo/bonobo-selector.c:343
+msgid "Interfaces required"
+msgstr "Felületek szükségesek"
+
+#: ../bonobo/bonobo-selector.c:344
+msgid ""
+"A NULL-terminated array of interfaces which a server must support in order "
+"to be listed in the selector. Defaults to \"IDL:Bonobo/Embeddable:1.0\" if "
+"no interfaces are listed"
+msgstr ""
+"Olyan felületek NULL-végű tömbje, amelyet a kiszolgálónak támogatnia kell, "
+"hogy a szelektorban megjelenjen. Az alapértelmezett az „IDL:Bonobo/"
+"Embeddable:1.0”, ha nincs más felület felsorolva."
+
+#: ../bonobo/bonobo-selector.c:346
+msgid "Interface required entry"
+msgstr "Szükséges felület bejegyzés"
+
+#: ../bonobo/bonobo-selector.c:347
+msgid "One of the interfaces that's required"
+msgstr "Az egyik szükséges felület"
+
+#: ../bonobo/bonobo-ui-config-widget.c:265
+msgid "Visible"
+msgstr "Látható"
+
+#: ../bonobo/bonobo-ui-config-widget.c:272
+msgid "_Show"
+msgstr "_Megjelenítés"
+
+#: ../bonobo/bonobo-ui-config-widget.c:279
+msgid "_Hide"
+msgstr "_Elrejtés"
+
+#: ../bonobo/bonobo-ui-config-widget.c:285
+msgid "_View tooltips"
+msgstr "_Buboréksúgó megjelenítése"
+
+#: ../bonobo/bonobo-ui-config-widget.c:290
+msgid "Toolbars"
+msgstr "Eszköztárak"
+
+#: ../bonobo/bonobo-ui-config-widget.c:300
+msgid "toolbars"
+msgstr "eszköztárak"
+
+#: ../bonobo/bonobo-ui-config-widget.c:311
+#: ../bonobo/bonobo-ui-sync-toolbar.c:566
+msgid "Look"
+msgstr "Kinézet"
+
+#: ../bonobo/bonobo-ui-config-widget.c:320
+#: ../bonobo/bonobo-ui-sync-toolbar.c:566
+msgid "_Icon"
+msgstr "_Ikon"
+
+#: ../bonobo/bonobo-ui-config-widget.c:326
+msgid "_Text and Icon"
+msgstr "_Szöveg és ikon"
+
+#: ../bonobo/bonobo-ui-config-widget.c:332
+msgid "Text only"
+msgstr "Csak szöveg"
+
+#: ../bonobo/bonobo-ui-config-widget.c:338
+msgid "_Priority text only"
+msgstr "Csak _lényeges szöveg"
+
+#: ../bonobo/bonobo-ui-engine.c:91
+msgid "Debug"
+msgstr "Hibakeresés"
+
+#: ../bonobo/bonobo-ui-engine.c:91
+msgid "_Dump XML"
+msgstr "_XML kiíratása"
+
+#: ../bonobo/bonobo-ui-engine.c:92
+msgid "Dump the entire UI's XML description to the console"
+msgstr "A teljes felhasználói felület XML-leírásának kiíratása a konzolra"
+
+#: ../bonobo/bonobo-ui-engine-config.c:522
+msgid "Configure UI"
+msgstr "UI beállítása"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:130
+msgid "Gdk debugging flags to set"
+msgstr "Beállítandó Gdk debug jelzőbitek"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:130 ../bonobo/bonobo-ui-init-gtk.c:133
+#: ../bonobo/bonobo-ui-init-gtk.c:161 ../bonobo/bonobo-ui-init-gtk.c:164
+msgid "FLAGS"
+msgstr "JELZŐK"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:133
+msgid "Gdk debugging flags to unset"
+msgstr "Kikapcsolandó Gdk debug jelzőbitek"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:137
+msgid "X display to use"
+msgstr "Használandó X-megjelenítő"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:137
+msgid "DISPLAY"
+msgstr "MEGJELENÍTŐ"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:141
+msgid "X screen to use"
+msgstr "Használandó X-képernyő"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:141
+msgid "SCREEN"
+msgstr "KÉPERNYŐ"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:145
+msgid "Make X calls synchronous"
+msgstr "Legyenek szinkron X-hívások"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:151
+msgid "Don't use X shared memory extension"
+msgstr "Ne használja az X megosztott memória kiterjesztését"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:155
+msgid "Program name as used by the window manager"
+msgstr "A programnév, ahogy az ablakkezelő használja"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:155
+msgid "NAME"
+msgstr "NÉV"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:158
+msgid "Program class as used by the window manager"
+msgstr "A program osztálya, ahogy az ablakkezelő használja"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:158
+msgid "CLASS"
+msgstr "OSZTÁLY"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:161
+msgid "Gtk+ debugging flags to set"
+msgstr "Beállítandó Gtk+ debug jelzőbitek"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:164
+msgid "Gtk+ debugging flags to unset"
+msgstr "Kikapcsolandó Gtk+ jelzőbitek"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:167
+msgid "Make all warnings fatal"
+msgstr "Minden figyelmeztetés végzetes legyen"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:170
+msgid "Load an additional Gtk module"
+msgstr "További Gtk modul betöltése"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:170
+msgid "MODULE"
+msgstr "MODUL"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:186
+msgid "GTK+"
+msgstr "GTK+"
+
+#: ../bonobo/bonobo-ui-main.c:278
+msgid "Bonobo GUI support"
+msgstr "Bonobo GUI támogatás"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:566
+msgid "B_oth"
+msgstr "Mind_kettő"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:566
+msgid "T_ext"
+msgstr "_Szöveg"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:567
+msgid "Hide t_ips"
+msgstr "_Buboréksúgó elrejtése"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:567
+msgid "Show t_ips"
+msgstr "_Buboréksúgó megjelenítése"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:568
+msgid "_Hide toolbar"
+msgstr "Eszköztár _elrejtése"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:568
+msgid "Customi_ze"
+msgstr "Testres_zabás"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:569
+msgid "Customize the toolbar"
+msgstr "Az eszköztár testreszabása"
+
+#: ../bonobo/bonobo-ui-toolbar.c:1115
+msgid "is floating"
+msgstr "lebegő"
+
+#: ../bonobo/bonobo-ui-toolbar.c:1116
+msgid "whether the toolbar is floating"
+msgstr "lebegő legyen-e az eszköztár"
+
+#: ../bonobo/bonobo-ui-toolbar.c:1162
+msgid "Style of bevel around the toolbar"
+msgstr "Az eszköztár körüli élkidolgozás stílusa"
+
+#: ../bonobo/bonobo-ui-util.c:601
+msgid "Could not display help for this application"
+msgstr "Az alkalmazás súgója nem jeleníthető meg"
+
+#: ../bonobo/bonobo-ui-util.c:643
+msgid "_Contents"
+msgstr "_Tartalom"
+
+#: ../bonobo/bonobo-ui-util.c:644
+msgid "View help for this application"
+msgstr "Az alkalmazás súgójának megtekintése"
+
+#: ../bonobo/bonobo-window.c:345
+msgid "Name of the window - used for configuration serialization."
+msgstr "Az ablak neve - a konfiguráció szerializációjához kell."
+
+#: ../bonobo/bonobo-zoomable.c:326
+msgid "Zoom level"
+msgstr "Nagyítás mértéke"
+
+#: ../bonobo/bonobo-zoomable.c:327
+msgid "The degree of enlargment"
+msgstr "A nagyítás mértéke"
+
+#: ../bonobo/bonobo-zoomable.c:335
+msgid "Minimum Zoom level"
+msgstr "Legkisebb nagyítás mértéke"
+
+#: ../bonobo/bonobo-zoomable.c:336
+msgid "The minimum degree of enlargment"
+msgstr "A legkisebb nagyítás mértéke"
+
+#: ../bonobo/bonobo-zoomable.c:344
+msgid "Maximum Zoom level"
+msgstr "Legnagyobb nagyítás mértéke"
+
+#: ../bonobo/bonobo-zoomable.c:345
+msgid "The maximum degree of enlargment"
+msgstr "A legnagyobb nagyítás mértéke"
+
+#: ../bonobo/bonobo-zoomable.c:353
+msgid "Has a minimum Zoom level"
+msgstr "Van legkisebb nagyítás mértéke"
+
+#: ../bonobo/bonobo-zoomable.c:354
+msgid "Whether we have a valid minimum zoom level"
+msgstr "Van-e érvényes legkisebb nagyítás mérték"
+
+#: ../bonobo/bonobo-zoomable.c:361
+msgid "Has a maximum Zoom level"
+msgstr "Van legnagyobb nagyítás mértéke"
+
+#: ../bonobo/bonobo-zoomable.c:362
+msgid "Whether we have a valid maximum zoom level"
+msgstr "Van-e érvényes legnagyobb nagyítás mérték"
+
+#: ../bonobo/bonobo-zoomable.c:369
+msgid "Is continuous"
+msgstr "Folyamatos"
+
+#: ../bonobo/bonobo-zoomable.c:370
+msgid "Whether we zoom continuously (as opposed to jumps)"
+msgstr "Folyamatosan nagyítható-e, vagy lépésenként"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:1
+msgid "About this application"
+msgstr "Az alkalmazás névjegye"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:2
+msgid "Select"
+msgstr "Kijelölés"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:3
+msgid "_About..."
+msgstr "_Névjegy..."
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:4
+msgid "_Edit"
+msgstr "S_zerkesztés"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:5
+#: ../tools/browser/bonobo-browser.xml.h:4
+msgid "_File"
+msgstr "_Fájl"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:6
+msgid "_Select"
+msgstr "_Kijelölés"
+
+#: ../samples/bonoboui/hello.c:63
+msgid "This does nothing; it is only a demonstration."
+msgstr "Ez semmit nem csinál, csak demó."
+
+#: ../samples/bonoboui/hello.c:145
+msgid "BonoboUI-Hello."
+msgstr "BonoboUI-Hello."
+
+#: ../samples/bonoboui/hello.c:217
+msgid "Gnome Hello"
+msgstr "Gnome Hello"
+
+#. Create Label and put it in the Button:
+#: ../samples/bonoboui/hello.c:272
+msgid "Hello, World!"
+msgstr "Szia világ!"
+
+#: ../samples/bonoboui/hello.c:312
+msgid "Cannot init libbonoboui code"
+msgstr "Nem lehet inicializálni a libbonoboui kódot"
+
+#: ../samples/controls/bonobo-sample-controls.c:131
+msgid "Could not initialize Bonobo UI"
+msgstr "Nem lehet inicializálni a Bonobo UI-t"
+
+#: ../tools/browser/bonobo-browser.desktop.in.h:1
+msgid "Bonobo Component Browser"
+msgstr "Bonobo-komponensböngésző"
+
+#: ../tools/browser/bonobo-browser.desktop.in.h:2
+msgid "Shows available Bonobo components"
+msgstr "Elérhető Bonobo-komponensek megjelenítése"
+
+#: ../tools/browser/bonobo-browser.xml.h:1
+msgid "About this program..."
+msgstr "A program névjegye..."
+
+#: ../tools/browser/bonobo-browser.xml.h:2
+msgid "Close the current window"
+msgstr "A jelenlegi ablak bezárása"
+
+#: ../tools/browser/bonobo-browser.xml.h:3
+msgid "Open a new window"
+msgstr "Új ablak megnyitása"
+
+#: ../tools/browser/bonobo-browser.xml.h:5
+msgid "_Help"
+msgstr "_Súgó"
+
+#. Build the general tab
+#: ../tools/browser/component-details.c:109
+msgid "General"
+msgstr "Általános"
+
+#: ../tools/browser/component-details.c:116
+#: ../tools/browser/component-list.c:398
+msgid "IID"
+msgstr "IID"
+
+#: ../tools/browser/component-details.c:117
+msgid "Location"
+msgstr "Hely"
+
+#. Build the details tab
+#: ../tools/browser/component-details.c:167
+msgid "Details"
+msgstr "Részletek"
+
+#: ../tools/browser/component-details.c:168
+msgid "Detailed Information"
+msgstr "Részletes információk"
+
+#: ../tools/browser/component-list.c:367 ../tools/browser/window.c:283
+msgid "Active"
+msgstr "Aktív"
+
+#: ../tools/browser/component-list.c:388
+msgid "Type"
+msgstr "Típus"
+
+#: ../tools/browser/window.c:162
+msgid "Component Details"
+msgstr "Komponens részletei"
+
+#: ../tools/browser/window.c:208
+msgid "Bonobo Browser"
+msgstr "Bonobo-böngésző"
+
+#: ../tools/browser/window.c:210
+msgid "Copyright 2001, The GNOME Foundation"
+msgstr "Copyright 2001, The GNOME Foundation"
+
+#: ../tools/browser/window.c:211
+msgid "Bonobo component browser"
+msgstr "Bonobo-komponensböngésző"
+
+#: ../tools/browser/window.c:214
+msgid "translator-credits"
+msgstr ""
+"Dvornik László <dvornik@gnome.hu>\n"
+"Kelemen Gábor <kelemeng@gnome.hu>\n"
+"Kovács Emese <emese@gnome.hu>\n"
+"Tímár András <timar@gnome.hu>"
+
+#. create the window
+#: ../tools/browser/window.c:240
+msgid "Component Browser"
+msgstr "Komponensböngésző"
+
+#. Fill out the tool bar
+#: ../tools/browser/window.c:280
+msgid "All"
+msgstr "Mind"
+
+#: ../tools/browser/window.c:286
+msgid "Inactive"
+msgstr "Inaktív"
+

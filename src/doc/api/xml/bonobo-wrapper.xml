@@ -1,0 +1,132 @@
+<refentry id="libbonoboui-bonobo-wrapper">
+<refmeta>
+<refentrytitle role="top_of_page" id="libbonoboui-bonobo-wrapper.top_of_page">bonobo-wrapper</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBBONOBOUI Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>bonobo-wrapper</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="libbonoboui-bonobo-wrapper.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+                    <link linkend="BonoboWrapperPrivate">BonoboWrapperPrivate</link>;
+                    <link linkend="BonoboWrapper">BonoboWrapper</link>;
+                    <link linkend="BonoboWrapperClass">BonoboWrapperClass</link>;
+<link linkend="GtkWidget">GtkWidget</link> *         <link linkend="bonobo-wrapper-new">bonobo_wrapper_new</link>                  (void);
+<link linkend="void">void</link>                <link linkend="bonobo-wrapper-set-covered">bonobo_wrapper_set_covered</link>          (<link linkend="BonoboWrapper">BonoboWrapper</link> *wrapper,
+                                                         <link linkend="gboolean">gboolean</link> covered);
+<link linkend="gboolean">gboolean</link>            <link linkend="bonobo-wrapper-is-covered">bonobo_wrapper_is_covered</link>           (<link linkend="BonoboWrapper">BonoboWrapper</link> *wrapper);
+<link linkend="gboolean">gboolean</link>            <link linkend="bonobo-wrapper-get-visibility">bonobo_wrapper_get_visibility</link>       (<link linkend="BonoboWrapper">BonoboWrapper</link> *wrapper);
+<link linkend="void">void</link>                <link linkend="bonobo-wrapper-set-visibility">bonobo_wrapper_set_visibility</link>       (<link linkend="BonoboWrapper">BonoboWrapper</link> *wrapper,
+                                                         <link linkend="gboolean">gboolean</link> visible);
+</synopsis>
+</refsynopsisdiv>
+
+
+
+
+
+
+
+
+
+<refsect1 id="libbonoboui-bonobo-wrapper.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+</para>
+</refsect1>
+
+<refsect1 id="libbonoboui-bonobo-wrapper.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="BonoboWrapperPrivate" role="struct">
+<title>BonoboWrapperPrivate</title>
+<indexterm zone="BonoboWrapperPrivate"><primary sortas="BonoboWrapperPrivate">BonoboWrapperPrivate</primary></indexterm><programlisting>typedef struct _BonoboWrapperPrivate BonoboWrapperPrivate;</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="BonoboWrapper" role="struct">
+<title>BonoboWrapper</title>
+<indexterm zone="BonoboWrapper"><primary sortas="BonoboWrapper">BonoboWrapper</primary></indexterm><programlisting>typedef struct {
+	GtkBin bin;
+
+	/* Private data. */
+	BonoboWrapperPrivate *priv;
+} BonoboWrapper;
+</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="BonoboWrapperClass" role="struct">
+<title>BonoboWrapperClass</title>
+<indexterm zone="BonoboWrapperClass"><primary sortas="BonoboWrapperClass">BonoboWrapperClass</primary></indexterm><programlisting>typedef struct {
+	GtkBinClass parent_class;
+} BonoboWrapperClass;
+</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="bonobo-wrapper-new" role="function">
+<title>bonobo_wrapper_new ()</title>
+<indexterm zone="bonobo-wrapper-new"><primary sortas="bonobo_wrapper_new">bonobo_wrapper_new</primary></indexterm><programlisting><link linkend="GtkWidget">GtkWidget</link> *         bonobo_wrapper_new                  (void);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-wrapper-set-covered" role="function">
+<title>bonobo_wrapper_set_covered ()</title>
+<indexterm zone="bonobo-wrapper-set-covered"><primary sortas="bonobo_wrapper_set_covered">bonobo_wrapper_set_covered</primary></indexterm><programlisting><link linkend="void">void</link>                bonobo_wrapper_set_covered          (<link linkend="BonoboWrapper">BonoboWrapper</link> *wrapper,
+                                                         <link linkend="gboolean">gboolean</link> covered);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>wrapper</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>covered</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-wrapper-is-covered" role="function">
+<title>bonobo_wrapper_is_covered ()</title>
+<indexterm zone="bonobo-wrapper-is-covered"><primary sortas="bonobo_wrapper_is_covered">bonobo_wrapper_is_covered</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            bonobo_wrapper_is_covered           (<link linkend="BonoboWrapper">BonoboWrapper</link> *wrapper);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>wrapper</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-wrapper-get-visibility" role="function">
+<title>bonobo_wrapper_get_visibility ()</title>
+<indexterm zone="bonobo-wrapper-get-visibility"><primary sortas="bonobo_wrapper_get_visibility">bonobo_wrapper_get_visibility</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            bonobo_wrapper_get_visibility       (<link linkend="BonoboWrapper">BonoboWrapper</link> *wrapper);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>wrapper</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-wrapper-set-visibility" role="function">
+<title>bonobo_wrapper_set_visibility ()</title>
+<indexterm zone="bonobo-wrapper-set-visibility"><primary sortas="bonobo_wrapper_set_visibility">bonobo_wrapper_set_visibility</primary></indexterm><programlisting><link linkend="void">void</link>                bonobo_wrapper_set_visibility       (<link linkend="BonoboWrapper">BonoboWrapper</link> *wrapper,
+                                                         <link linkend="gboolean">gboolean</link> visible);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>wrapper</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>visible</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

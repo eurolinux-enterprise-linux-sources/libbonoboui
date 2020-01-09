@@ -1,0 +1,278 @@
+<refentry id="libbonoboui-bonobo-selector">
+<refmeta>
+<refentrytitle role="top_of_page" id="libbonoboui-bonobo-selector.top_of_page">BonoboSelector</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBBONOBOUI Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>BonoboSelector</refname>
+<refpurpose>a component selector widget</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="libbonoboui-bonobo-selector.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+<anchor id="BonoboSelector"/>
+<synopsis>
+                    <link linkend="BonoboSelectorPrivate">BonoboSelectorPrivate</link>;
+                    <link linkend="BonoboSelector-struct">BonoboSelector</link>;
+                    <link linkend="BonoboSelectorClass">BonoboSelectorClass</link>;
+<link linkend="GtkWidget">GtkWidget</link> *         <link linkend="bonobo-selector-construct">bonobo_selector_construct</link>           (<link linkend="BonoboSelector">BonoboSelector</link> *sel,
+                                                         const <link linkend="gchar">gchar</link> *title,
+                                                         <link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *selector);
+<link linkend="GtkWidget">GtkWidget</link> *         <link linkend="bonobo-selector-new">bonobo_selector_new</link>                 (const <link linkend="gchar">gchar</link> *title,
+                                                         const <link linkend="gchar">gchar</link> **interfaces_required);
+<link linkend="gchar">gchar</link> *             <link linkend="bonobo-selector-get-selected-id">bonobo_selector_get_selected_id</link>     (<link linkend="BonoboSelector">BonoboSelector</link> *sel);
+<link linkend="gchar">gchar</link> *             <link linkend="bonobo-selector-get-selected-name">bonobo_selector_get_selected_name</link>   (<link linkend="BonoboSelector">BonoboSelector</link> *sel);
+<link linkend="gchar">gchar</link> *             <link linkend="bonobo-selector-get-selected-description">bonobo_selector_get_selected_description</link>
+                                                        (<link linkend="BonoboSelector">BonoboSelector</link> *sel);
+<link linkend="gchar">gchar</link> *             <link linkend="bonobo-selector-select-id">bonobo_selector_select_id</link>           (const <link linkend="gchar">gchar</link> *title,
+                                                         const <link linkend="gchar">gchar</link> **interfaces_required);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="libbonoboui-bonobo-selector.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+         +----<link linkend="GtkObject">GtkObject</link>
+               +----<link linkend="GtkWidget">GtkWidget</link>
+                     +----<link linkend="GtkContainer">GtkContainer</link>
+                           +----<link linkend="GtkBin">GtkBin</link>
+                                 +----<link linkend="GtkWindow">GtkWindow</link>
+                                       +----<link linkend="GtkDialog">GtkDialog</link>
+                                             +----BonoboSelector
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 id="libbonoboui-bonobo-selector.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+BonoboSelector implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+</refsect1>
+
+
+<refsect1 id="libbonoboui-bonobo-selector.properties" role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+  &quot;<link linkend="BonoboSelector--interfaces-required">interfaces-required</link>&quot;      <link linkend="GValueArray">GValueArray</link>*          : Write / Construct
+</synopsis>
+</refsect1>
+
+<refsect1 id="libbonoboui-bonobo-selector.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<synopsis>
+  &quot;<link linkend="BonoboSelector-cancel">cancel</link>&quot;                                         : Run Last
+  &quot;<link linkend="BonoboSelector-ok">ok</link>&quot;                                             : Run Last
+</synopsis>
+</refsect1>
+
+
+<refsect1 id="libbonoboui-bonobo-selector.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+This <link linkend="GnomeDialog"><type>GnomeDialog</type></link> allows the user to select a component implementing
+a set of interfaces. The easiest way to do this in your code is by
+using:
+  <example>
+    <title>Simple Bonobo/Control selection</title>
+    <programlisting>
+{
+	char *interfaces [] = { "IDL:Bonobo/Control:1.0", NULL };
+	char *oaf_iid;
+	oaf_iid = bonobo_selector_select_id (
+		_("Please select a Control"), interfaces);
+	g_warning ("You selected '%s'", oaf_iid);
+	g_free (oaf_iid);
+}
+    </programlisting>
+  </example>
+  This will throw up a dialog containing all the available components
+implementing the IDL:Bonobo/Control:1.0 interface and list them for
+the user to select.
+</para>
+</refsect1>
+
+<refsect1 id="libbonoboui-bonobo-selector.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="BonoboSelectorPrivate" role="struct">
+<title>BonoboSelectorPrivate</title>
+<indexterm zone="BonoboSelectorPrivate"><primary sortas="BonoboSelectorPrivate">BonoboSelectorPrivate</primary></indexterm><programlisting>typedef struct _BonoboSelectorPrivate BonoboSelectorPrivate;</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="BonoboSelector-struct" role="struct">
+<title>BonoboSelector</title>
+<indexterm zone="BonoboSelector-struct"><primary sortas="BonoboSelector">BonoboSelector</primary></indexterm><programlisting>typedef struct _BonoboSelector BonoboSelector;</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="BonoboSelectorClass" role="struct">
+<title>BonoboSelectorClass</title>
+<indexterm zone="BonoboSelectorClass"><primary sortas="BonoboSelectorClass">BonoboSelectorClass</primary></indexterm><programlisting>typedef struct {
+	GtkDialogClass parent_class;
+	
+	void (* ok)	(BonoboSelector *sel);
+	void (* cancel)	(BonoboSelector *sel);
+
+	gpointer dummy[2];
+} BonoboSelectorClass;
+</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="bonobo-selector-construct" role="function">
+<title>bonobo_selector_construct ()</title>
+<indexterm zone="bonobo-selector-construct"><primary sortas="bonobo_selector_construct">bonobo_selector_construct</primary></indexterm><programlisting><link linkend="GtkWidget">GtkWidget</link> *         bonobo_selector_construct           (<link linkend="BonoboSelector">BonoboSelector</link> *sel,
+                                                         const <link linkend="gchar">gchar</link> *title,
+                                                         <link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *selector);</programlisting>
+<para>
+Don't use this ever - use construct-time properties instead.
+TODO: Remove from header when we are allowed to change the API.
+Constructs the innards of a bonobo selector window.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>sel</parameter>&#160;:</term>
+<listitem><simpara> the selector to construct
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>title</parameter>&#160;:</term>
+<listitem><simpara> the title for the window
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>selector</parameter>&#160;:</term>
+<listitem><simpara> the component view widget to put inside it.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> the constructed widget.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-selector-new" role="function">
+<title>bonobo_selector_new ()</title>
+<indexterm zone="bonobo-selector-new"><primary sortas="bonobo_selector_new">bonobo_selector_new</primary></indexterm><programlisting><link linkend="GtkWidget">GtkWidget</link> *         bonobo_selector_new                 (const <link linkend="gchar">gchar</link> *title,
+                                                         const <link linkend="gchar">gchar</link> **interfaces_required);</programlisting>
+<para>
+Creates a new BonoboSelector widget.  The title of the dialog
+is set to <parameter>title</parameter>, and the list of selectable servers is populated
+with those servers which support the interfaces specified in
+<parameter>interfaces_required</parameter>.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>title</parameter>&#160;:</term>
+<listitem><simpara> A string which should go in the title of the
+BonoboSelector window.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>interfaces_required</parameter>&#160;:</term>
+<listitem><simpara> A NULL-terminated array of interfaces which a
+server must support in order to be listed in the selector.  Defaults
+to "IDL:Bonobo/Embeddable:1.0" if no interfaces are listed.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> A pointer to the newly-created BonoboSelector widget.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-selector-get-selected-id" role="function">
+<title>bonobo_selector_get_selected_id ()</title>
+<indexterm zone="bonobo-selector-get-selected-id"><primary sortas="bonobo_selector_get_selected_id">bonobo_selector_get_selected_id</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             bonobo_selector_get_selected_id     (<link linkend="BonoboSelector">BonoboSelector</link> *sel);</programlisting>
+<para>
+</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>sel</parameter>&#160;:</term>
+<listitem><simpara> A BonoboSelector widget.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> A newly-allocated string containing the ID of the
+currently-selected CORBA server (i.e., the corba server whose name
+is highlighted in the list).  The user of this function is
+responsible for freeing this. It will give an oaf iid back.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-selector-get-selected-name" role="function">
+<title>bonobo_selector_get_selected_name ()</title>
+<indexterm zone="bonobo-selector-get-selected-name"><primary sortas="bonobo_selector_get_selected_name">bonobo_selector_get_selected_name</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             bonobo_selector_get_selected_name   (<link linkend="BonoboSelector">BonoboSelector</link> *sel);</programlisting>
+<para>
+</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>sel</parameter>&#160;:</term>
+<listitem><simpara> A BonoboSelector widget.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> A newly-allocated string containing the name of the
+currently-selected CORBA server (i.e., the corba server whose name
+is highlighted in the list).  The user of this function is
+responsible for freeing this.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-selector-get-selected-description" role="function">
+<title>bonobo_selector_get_selected_description ()</title>
+<indexterm zone="bonobo-selector-get-selected-description"><primary sortas="bonobo_selector_get_selected_description">bonobo_selector_get_selected_description</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             bonobo_selector_get_selected_description
+                                                        (<link linkend="BonoboSelector">BonoboSelector</link> *sel);</programlisting>
+<para>
+</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>sel</parameter>&#160;:</term>
+<listitem><simpara> A BonoboSelector widget.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> A newly-allocated string containing the description of the
+currently-selected CORBA server (i.e., the corba server whose name
+is highlighted in the list).  The user of this function is
+responsible for freeing this.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-selector-select-id" role="function">
+<title>bonobo_selector_select_id ()</title>
+<indexterm zone="bonobo-selector-select-id"><primary sortas="bonobo_selector_select_id">bonobo_selector_select_id</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             bonobo_selector_select_id           (const <link linkend="gchar">gchar</link> *title,
+                                                         const <link linkend="gchar">gchar</link> **interfaces_required);</programlisting>
+<para>
+Calls <link linkend="bonobo-selector-new"><function>bonobo_selector_new()</function></link> to create a new
+BonoboSelector widget with the specified paramters, <parameter>title</parameter> and
+<parameter>interfaces_required</parameter>.  Then runs the dialog modally and allows
+the user to make a selection.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>title</parameter>&#160;:</term>
+<listitem><simpara> The title to be used for the dialog.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>interfaces_required</parameter>&#160;:</term>
+<listitem><simpara> A list of required interfaces.  See
+<link linkend="bonobo-selector-new"><function>bonobo_selector_new()</function></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> The Oaf IID of the selected server, or NULL if no server is
+selected.  The ID string has been allocated with g_strdup.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 id="libbonoboui-bonobo-selector.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="BonoboSelector--interfaces-required" role="property"><title>The <literal>&quot;interfaces-required&quot;</literal> property</title>
+<indexterm zone="BonoboSelector--interfaces-required"><primary sortas="BonoboSelector:interfaces-required">BonoboSelector:interfaces-required</primary></indexterm><programlisting>  &quot;interfaces-required&quot;      <link linkend="GValueArray">GValueArray</link>*          : Write / Construct</programlisting>
+<para>A NULL-terminated array of interfaces which a server must support in order to be listed in the selector. Defaults to "IDL:Bonobo/Embeddable:1.0" if no interfaces are listed.</para></refsect2>
+</refsect1>
+
+<refsect1 id="libbonoboui-bonobo-selector.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="BonoboSelector-cancel" role="signal"><title>The <literal>&quot;cancel&quot;</literal> signal</title>
+<indexterm zone="BonoboSelector-cancel"><primary sortas="BonoboSelector::cancel">BonoboSelector::cancel</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="BonoboSelector">BonoboSelector</link> *bonoboselector,
+                                                        <link linkend="gpointer">gpointer</link>        user_data)           : Run Last</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>bonoboselector</parameter>&#160;:</term>
+<listitem><simpara>the object which received the signal.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&#160;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2><refsect2 id="BonoboSelector-ok" role="signal"><title>The <literal>&quot;ok&quot;</literal> signal</title>
+<indexterm zone="BonoboSelector-ok"><primary sortas="BonoboSelector::ok">BonoboSelector::ok</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="BonoboSelector">BonoboSelector</link> *bonoboselector,
+                                                        <link linkend="gpointer">gpointer</link>        user_data)           : Run Last</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>bonoboselector</parameter>&#160;:</term>
+<listitem><simpara>the object which received the signal.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&#160;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+</refsect1>
+
+
+
+</refentry>

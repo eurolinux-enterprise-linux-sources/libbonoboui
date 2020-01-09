@@ -1,0 +1,160 @@
+<refentry id="libbonoboui-bonobo-a11y">
+<refmeta>
+<refentrytitle role="top_of_page" id="libbonoboui-bonobo-a11y.top_of_page">bonobo-a11y</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBBONOBOUI Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>bonobo-a11y</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="libbonoboui-bonobo-a11y.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+<link linkend="void">void</link>                (<link linkend="BonoboA11YClassInitFn">*BonoboA11YClassInitFn</link>)            (<link linkend="AtkObjectClass">AtkObjectClass</link> *klass);
+<link linkend="AtkObject">AtkObject</link> *         <link linkend="bonobo-a11y-get-atk-object">bonobo_a11y_get_atk_object</link>          (<link linkend="gpointer">gpointer</link> widget);
+<link linkend="AtkObject">AtkObject</link> *         <link linkend="bonobo-a11y-set-atk-object-ret">bonobo_a11y_set_atk_object_ret</link>      (<link linkend="GtkWidget">GtkWidget</link> *widget,
+                                                         <link linkend="AtkObject">AtkObject</link> *object);
+<link linkend="GType">GType</link>               <link linkend="bonobo-a11y-get-derived-type-for">bonobo_a11y_get_derived_type_for</link>    (<link linkend="GType">GType</link> widget_type,
+                                                         const <link linkend="char">char</link> *gail_parent_class,
+                                                         <link linkend="BonoboA11YClassInitFn">BonoboA11YClassInitFn</link> class_init);
+<link linkend="AtkObject">AtkObject</link> *         <link linkend="bonobo-a11y-create-accessible-for">bonobo_a11y_create_accessible_for</link>   (<link linkend="GtkWidget">GtkWidget</link> *widget,
+                                                         const <link linkend="char">char</link> *gail_parent_class,
+                                                         <link linkend="BonoboA11YClassInitFn">BonoboA11YClassInitFn</link> class_init,
+                                                         <link linkend="GType">GType</link> first_interface_type,
+                                                         ...);
+<link linkend="void">void</link>                <link linkend="bonobo-a11y-add-actions-interface">bonobo_a11y_add_actions_interface</link>   (<link linkend="GType">GType</link> a11y_object_type,
+                                                         <link linkend="AtkActionIface">AtkActionIface</link> *chain,
+                                                         <link linkend="int">int</link> first_id,
+                                                         ...);
+</synopsis>
+</refsynopsisdiv>
+
+
+
+
+
+
+
+
+
+<refsect1 id="libbonoboui-bonobo-a11y.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+</para>
+</refsect1>
+
+<refsect1 id="libbonoboui-bonobo-a11y.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="BonoboA11YClassInitFn" role="function">
+<title>BonoboA11YClassInitFn ()</title>
+<indexterm zone="BonoboA11YClassInitFn"><primary sortas="BonoboA11YClassInitFn">BonoboA11YClassInitFn</primary></indexterm><programlisting><link linkend="void">void</link>                (*BonoboA11YClassInitFn)            (<link linkend="AtkObjectClass">AtkObjectClass</link> *klass);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>klass</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-a11y-get-atk-object" role="function">
+<title>bonobo_a11y_get_atk_object ()</title>
+<indexterm zone="bonobo-a11y-get-atk-object"><primary sortas="bonobo_a11y_get_atk_object">bonobo_a11y_get_atk_object</primary></indexterm><programlisting><link linkend="AtkObject">AtkObject</link> *         bonobo_a11y_get_atk_object          (<link linkend="gpointer">gpointer</link> widget);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>widget</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-a11y-set-atk-object-ret" role="function">
+<title>bonobo_a11y_set_atk_object_ret ()</title>
+<indexterm zone="bonobo-a11y-set-atk-object-ret"><primary sortas="bonobo_a11y_set_atk_object_ret">bonobo_a11y_set_atk_object_ret</primary></indexterm><programlisting><link linkend="AtkObject">AtkObject</link> *         bonobo_a11y_set_atk_object_ret      (<link linkend="GtkWidget">GtkWidget</link> *widget,
+                                                         <link linkend="AtkObject">AtkObject</link> *object);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>widget</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>object</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-a11y-get-derived-type-for" role="function">
+<title>bonobo_a11y_get_derived_type_for ()</title>
+<indexterm zone="bonobo-a11y-get-derived-type-for"><primary sortas="bonobo_a11y_get_derived_type_for">bonobo_a11y_get_derived_type_for</primary></indexterm><programlisting><link linkend="GType">GType</link>               bonobo_a11y_get_derived_type_for    (<link linkend="GType">GType</link> widget_type,
+                                                         const <link linkend="char">char</link> *gail_parent_class,
+                                                         <link linkend="BonoboA11YClassInitFn">BonoboA11YClassInitFn</link> class_init);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>widget_type</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>gail_parent_class</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>class_init</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-a11y-create-accessible-for" role="function">
+<title>bonobo_a11y_create_accessible_for ()</title>
+<indexterm zone="bonobo-a11y-create-accessible-for"><primary sortas="bonobo_a11y_create_accessible_for">bonobo_a11y_create_accessible_for</primary></indexterm><programlisting><link linkend="AtkObject">AtkObject</link> *         bonobo_a11y_create_accessible_for   (<link linkend="GtkWidget">GtkWidget</link> *widget,
+                                                         const <link linkend="char">char</link> *gail_parent_class,
+                                                         <link linkend="BonoboA11YClassInitFn">BonoboA11YClassInitFn</link> class_init,
+                                                         <link linkend="GType">GType</link> first_interface_type,
+                                                         ...);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>widget</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>gail_parent_class</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>class_init</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>first_interface_type</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>...</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-a11y-add-actions-interface" role="function">
+<title>bonobo_a11y_add_actions_interface ()</title>
+<indexterm zone="bonobo-a11y-add-actions-interface"><primary sortas="bonobo_a11y_add_actions_interface">bonobo_a11y_add_actions_interface</primary></indexterm><programlisting><link linkend="void">void</link>                bonobo_a11y_add_actions_interface   (<link linkend="GType">GType</link> a11y_object_type,
+                                                         <link linkend="AtkActionIface">AtkActionIface</link> *chain,
+                                                         <link linkend="int">int</link> first_id,
+                                                         ...);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>a11y_object_type</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>chain</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>first_id</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>...</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

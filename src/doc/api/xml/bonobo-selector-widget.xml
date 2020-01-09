@@ -1,0 +1,162 @@
+<refentry id="libbonoboui-bonobo-selector-widget">
+<refmeta>
+<refentrytitle role="top_of_page" id="libbonoboui-bonobo-selector-widget.top_of_page">bonobo-selector-widget</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBBONOBOUI Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>bonobo-selector-widget</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="libbonoboui-bonobo-selector-widget.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+                    <link linkend="BonoboSelectorWidgetPrivate">BonoboSelectorWidgetPrivate</link>;
+                    <link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link>;
+                    <link linkend="BonoboSelectorWidgetClass">BonoboSelectorWidgetClass</link>;
+<link linkend="GtkWidget">GtkWidget</link> *         <link linkend="bonobo-selector-widget-new">bonobo_selector_widget_new</link>          (void);
+<link linkend="void">void</link>                <link linkend="bonobo-selector-widget-set-interfaces">bonobo_selector_widget_set_interfaces</link>
+                                                        (<link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *sel,
+                                                         const <link linkend="gchar">gchar</link> **interfaces_required);
+<link linkend="gchar">gchar</link> *             <link linkend="bonobo-selector-widget-get-id">bonobo_selector_widget_get_id</link>       (<link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *sel);
+<link linkend="gchar">gchar</link> *             <link linkend="bonobo-selector-widget-get-name">bonobo_selector_widget_get_name</link>     (<link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *sel);
+<link linkend="gchar">gchar</link> *             <link linkend="bonobo-selector-widget-get-description">bonobo_selector_widget_get_description</link>
+                                                        (<link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *sel);
+</synopsis>
+</refsynopsisdiv>
+
+
+
+
+
+
+
+
+
+<refsect1 id="libbonoboui-bonobo-selector-widget.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+</para>
+</refsect1>
+
+<refsect1 id="libbonoboui-bonobo-selector-widget.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="BonoboSelectorWidgetPrivate" role="struct">
+<title>BonoboSelectorWidgetPrivate</title>
+<indexterm zone="BonoboSelectorWidgetPrivate"><primary sortas="BonoboSelectorWidgetPrivate">BonoboSelectorWidgetPrivate</primary></indexterm><programlisting>typedef struct _BonoboSelectorWidgetPrivate BonoboSelectorWidgetPrivate;</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="BonoboSelectorWidget" role="struct">
+<title>BonoboSelectorWidget</title>
+<indexterm zone="BonoboSelectorWidget"><primary sortas="BonoboSelectorWidget">BonoboSelectorWidget</primary></indexterm><programlisting>typedef struct {
+	GtkVBox parent;
+
+	BonoboSelectorWidgetPrivate *priv;
+} BonoboSelectorWidget;
+</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="BonoboSelectorWidgetClass" role="struct">
+<title>BonoboSelectorWidgetClass</title>
+<indexterm zone="BonoboSelectorWidgetClass"><primary sortas="BonoboSelectorWidgetClass">BonoboSelectorWidgetClass</primary></indexterm><programlisting>typedef struct {
+	GtkVBoxClass parent_class;
+
+	/* Virtual methods */
+	gchar *(* get_id)          (BonoboSelectorWidget *sel);
+	gchar *(* get_name)        (BonoboSelectorWidget *sel);
+	gchar *(* get_description) (BonoboSelectorWidget *sel);
+	void   (* set_interfaces)  (BonoboSelectorWidget *sel,
+				    const gchar         **interfaces);
+
+	/* User select */
+	void   (* final_select)    (BonoboSelectorWidget *sel);
+
+	gpointer dummy[2];
+} BonoboSelectorWidgetClass;
+</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="bonobo-selector-widget-new" role="function">
+<title>bonobo_selector_widget_new ()</title>
+<indexterm zone="bonobo-selector-widget-new"><primary sortas="bonobo_selector_widget_new">bonobo_selector_widget_new</primary></indexterm><programlisting><link linkend="GtkWidget">GtkWidget</link> *         bonobo_selector_widget_new          (void);</programlisting>
+<para>
+Creates a new BonoboSelectorWidget widget, this contains
+a list and a description pane for each component.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> A pointer to the newly-created BonoboSelectorWidget widget.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-selector-widget-set-interfaces" role="function">
+<title>bonobo_selector_widget_set_interfaces ()</title>
+<indexterm zone="bonobo-selector-widget-set-interfaces"><primary sortas="bonobo_selector_widget_set_interfaces">bonobo_selector_widget_set_interfaces</primary></indexterm><programlisting><link linkend="void">void</link>                bonobo_selector_widget_set_interfaces
+                                                        (<link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *sel,
+                                                         const <link linkend="gchar">gchar</link> **interfaces_required);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>sel</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>interfaces_required</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-selector-widget-get-id" role="function">
+<title>bonobo_selector_widget_get_id ()</title>
+<indexterm zone="bonobo-selector-widget-get-id"><primary sortas="bonobo_selector_widget_get_id">bonobo_selector_widget_get_id</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             bonobo_selector_widget_get_id       (<link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *sel);</programlisting>
+<para>
+</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>sel</parameter>&#160;:</term>
+<listitem><simpara> A BonoboSelectorWidget widget.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> A newly-allocated string containing the ID of the
+currently-selected CORBA server (i.e., the corba server whose name
+is highlighted in the list).  The user of this function is
+responsible for freeing this. It will give an oaf iid back.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-selector-widget-get-name" role="function">
+<title>bonobo_selector_widget_get_name ()</title>
+<indexterm zone="bonobo-selector-widget-get-name"><primary sortas="bonobo_selector_widget_get_name">bonobo_selector_widget_get_name</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             bonobo_selector_widget_get_name     (<link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *sel);</programlisting>
+<para>
+</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>sel</parameter>&#160;:</term>
+<listitem><simpara> A BonoboSelectorWidget widget.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> A newly-allocated string containing the name of the
+currently-selected CORBA server (i.e., the corba server whose name
+is highlighted in the list).  The user of this function is
+responsible for freeing this.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="bonobo-selector-widget-get-description" role="function">
+<title>bonobo_selector_widget_get_description ()</title>
+<indexterm zone="bonobo-selector-widget-get-description"><primary sortas="bonobo_selector_widget_get_description">bonobo_selector_widget_get_description</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             bonobo_selector_widget_get_description
+                                                        (<link linkend="BonoboSelectorWidget">BonoboSelectorWidget</link> *sel);</programlisting>
+<para>
+</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>sel</parameter>&#160;:</term>
+<listitem><simpara> A BonoboSelectorWidget widget.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> A newly-allocated string containing the description of the
+currently-selected CORBA server (i.e., the corba server whose name
+is highlighted in the list).  The user of this function is
+responsible for freeing this.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>
