@@ -1,0 +1,514 @@
+# translation of gl.po to Galego
+# Galician Translation of libbonoboui.
+# Copyright (C) 2004 Jesús Bravo Álvarez
+# Copyright (C) 2002 Xabi García
+#
+# Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
+# colaborar connosco, podes atopar máis información en http://www.trasno.net
+#
+#
+# Jesús Bravo Álvarez <suso@trasno.net>, 2004.
+# Xabi García <xabigf@gmx.net>, 2002.
+# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.
+# Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.
+# Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-21 13:19+0200\n"
+"PO-Revision-Date: 2010-07-21 13:19+0200\n"
+"Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
+"Language-Team: Galician <gnome-gl-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: gl\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ../bonobo/bonobo-canvas-item.c:680
+msgid "corba factory"
+msgstr "factoría corba"
+
+#: ../bonobo/bonobo-canvas-item.c:681
+msgid "The factory pointer"
+msgstr "O punteiro de factoría"
+
+#: ../bonobo/bonobo-canvas-item.c:690
+msgid "corba UI container"
+msgstr "contedor IU de corba"
+
+#: ../bonobo/bonobo-canvas-item.c:691
+msgid "The User interface container"
+msgstr "O contedor da interface de usuario"
+
+#: ../bonobo/bonobo-dock-item-grip.c:254
+msgid "Dock the toolbar"
+msgstr "Ancorar a barra de ferramentas"
+
+#: ../bonobo/bonobo-dock-item-grip.c:255
+msgid "Undock the toolbar"
+msgstr "Desancorar a barra de ferramentas"
+
+#: ../bonobo/bonobo-dock-item.c:225 ../bonobo/bonobo-dock-item.c:226
+#: ../bonobo/bonobo-ui-toolbar.c:1163
+msgid "Shadow type"
+msgstr "Tipo de sombra"
+
+#: ../bonobo/bonobo-dock-item.c:236 ../bonobo/bonobo-dock-item.c:237
+#: ../bonobo/bonobo-ui-toolbar.c:1107 ../bonobo/bonobo-ui-toolbar.c:1108
+msgid "Orientation"
+msgstr "Orientación"
+
+#: ../bonobo/bonobo-dock-item.c:247 ../bonobo/bonobo-dock-item.c:248
+#: ../bonobo/bonobo-ui-toolbar.c:1126 ../bonobo/bonobo-ui-toolbar.c:1127
+msgid "Preferred width"
+msgstr "Largura preferida"
+
+#: ../bonobo/bonobo-dock-item.c:256 ../bonobo/bonobo-dock-item.c:257
+#: ../bonobo/bonobo-ui-toolbar.c:1135 ../bonobo/bonobo-ui-toolbar.c:1136
+msgid "Preferred height"
+msgstr "Altura preferida"
+
+#: ../bonobo/bonobo-file-selector-util.c:350
+msgid "Select a file to open"
+msgstr "Seleccione un ficheiro para abrir"
+
+#: ../bonobo/bonobo-file-selector-util.c:378
+msgid "Select files to open"
+msgstr "Seleccione ficheiros para abrir"
+
+#: ../bonobo/bonobo-file-selector-util.c:407
+msgid "Select a filename to save"
+msgstr "Seleccione un nome de ficheiro para gardar"
+
+#: ../bonobo/bonobo-plug.c:425
+msgid "Event Forwarding"
+msgstr "Reenvío de eventos"
+
+#: ../bonobo/bonobo-plug.c:426
+msgid "Whether X events should be forwarded"
+msgstr "Indica se os eventos X deben ser reenviados"
+
+#: ../bonobo/bonobo-selector-widget.c:300 ../bonobo/bonobo-window.c:347
+#: ../tools/browser/component-details.c:108
+#: ../tools/browser/component-list.c:369
+msgid "Name"
+msgstr "Nome"
+
+#: ../bonobo/bonobo-selector-widget.c:322
+#: ../tools/browser/component-details.c:109
+msgid "Description"
+msgstr "Descrición"
+
+#: ../bonobo/bonobo-selector.c:343
+msgid "Interfaces required"
+msgstr "Interfaces requiridas"
+
+#: ../bonobo/bonobo-selector.c:344
+msgid ""
+"A NULL-terminated array of interfaces which a server must support in order "
+"to be listed in the selector. Defaults to \"IDL:Bonobo/Embeddable:1.0\" if "
+"no interfaces are listed"
+msgstr ""
+"Matriz de interfaces terminada en NULL que debe admitir un servidor para ser "
+"listado no selector. A predeterminada é «IDL:Bonobo/Embeddable:1.0» se non "
+"hai interfaces listadas"
+
+#: ../bonobo/bonobo-selector.c:346
+msgid "Interface required entry"
+msgstr "Entrada de interface requirida"
+
+#: ../bonobo/bonobo-selector.c:347
+msgid "One of the interfaces that's required"
+msgstr "Unha das interfaces que é requirida"
+
+#: ../bonobo/bonobo-ui-config-widget.c:267
+msgid "Visible"
+msgstr "Visíbel"
+
+#: ../bonobo/bonobo-ui-config-widget.c:274
+msgid "_Show"
+msgstr "Mo_strar"
+
+#: ../bonobo/bonobo-ui-config-widget.c:281
+msgid "_Hide"
+msgstr "_Ocultar"
+
+#: ../bonobo/bonobo-ui-config-widget.c:287
+msgid "_View tooltips"
+msgstr "_Ver as indicacións"
+
+#: ../bonobo/bonobo-ui-config-widget.c:292
+msgid "Toolbars"
+msgstr "Barras de ferramentas"
+
+#: ../bonobo/bonobo-ui-config-widget.c:302
+msgid "toolbars"
+msgstr "barras de ferramentas"
+
+#: ../bonobo/bonobo-ui-config-widget.c:313
+#: ../bonobo/bonobo-ui-sync-toolbar.c:568
+msgid "Look"
+msgstr "Aparencia"
+
+#: ../bonobo/bonobo-ui-config-widget.c:322
+#: ../bonobo/bonobo-ui-sync-toolbar.c:568
+msgid "_Icon"
+msgstr "_Icona"
+
+#: ../bonobo/bonobo-ui-config-widget.c:328
+msgid "_Text and Icon"
+msgstr "_Texto e icona"
+
+#: ../bonobo/bonobo-ui-config-widget.c:334
+msgid "Text only"
+msgstr "Só texto"
+
+#: ../bonobo/bonobo-ui-config-widget.c:340
+msgid "_Priority text only"
+msgstr "Só texto _prioritario"
+
+#: ../bonobo/bonobo-ui-engine.c:93
+msgid "Debug"
+msgstr "Depurar"
+
+#: ../bonobo/bonobo-ui-engine.c:93
+msgid "_Dump XML"
+msgstr "_Descargar XML"
+
+#: ../bonobo/bonobo-ui-engine.c:94
+msgid "Dump the entire UI's XML description to the console"
+msgstr "Descargar a descrición XML completa da IU na consola"
+
+#: ../bonobo/bonobo-ui-engine-config.c:524
+msgid "Configure UI"
+msgstr "Configurar IU"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:131
+msgid "Gdk debugging flags to set"
+msgstr "Estabelecer os parámetros de depuración de Gdk"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:131 ../bonobo/bonobo-ui-init-gtk.c:134
+#: ../bonobo/bonobo-ui-init-gtk.c:162 ../bonobo/bonobo-ui-init-gtk.c:165
+msgid "FLAGS"
+msgstr "PARÁMETROS"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:134
+msgid "Gdk debugging flags to unset"
+msgstr "Desconfigurar os parámetros de depuración de Gdk"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:138
+msgid "X display to use"
+msgstr "Pantalla de X que se vai usar"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:138
+msgid "DISPLAY"
+msgstr "MONITOR"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:142
+msgid "X screen to use"
+msgstr "Pantalla de X para usar"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:142
+msgid "SCREEN"
+msgstr "PANTALLA"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:146
+msgid "Make X calls synchronous"
+msgstr "Facer chamadas a X síncronas"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:152
+msgid "Don't use X shared memory extension"
+msgstr "Non empregar a extensión de memoria compartida de X"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:156
+msgid "Program name as used by the window manager"
+msgstr "Nome do programa empregado polo xestor de xanelas"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:156
+msgid "NAME"
+msgstr "NOME"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:159
+msgid "Program class as used by the window manager"
+msgstr "Clase do programa empregado polo xestor de xanelas"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:159
+msgid "CLASS"
+msgstr "CLASE"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:162
+msgid "Gtk+ debugging flags to set"
+msgstr "Estabelecer os parámetros de depuración do Gtk+"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:165
+msgid "Gtk+ debugging flags to unset"
+msgstr "Desconfigurar os parámetros de depuración Gtk+"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:168
+msgid "Make all warnings fatal"
+msgstr "Facer que os avisos sexan todos moi graves"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:171
+msgid "Load an additional Gtk module"
+msgstr "Cargar un módulo adicional do Gtk"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:171
+msgid "MODULE"
+msgstr "MÓDULO"
+
+#: ../bonobo/bonobo-ui-init-gtk.c:187
+msgid "GTK+"
+msgstr "GTK+"
+
+#: ../bonobo/bonobo-ui-main.c:281
+msgid "Bonobo GUI support"
+msgstr "Compatibilidade con GUI do Bonobo"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:568
+msgid "B_oth"
+msgstr "Amb_os"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:568
+msgid "T_ext"
+msgstr "T_exto"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:569
+msgid "Hide t_ips"
+msgstr "Ocultar suxest_ións"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:569
+msgid "Show t_ips"
+msgstr "Mostrar suxest_ións"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:570
+msgid "_Hide toolbar"
+msgstr "O_cultar a barra de ferramentas"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:570
+msgid "Customi_ze"
+msgstr "Personali_zar"
+
+#: ../bonobo/bonobo-ui-sync-toolbar.c:571
+msgid "Customize the toolbar"
+msgstr "Personalizar a barra de ferramentas"
+
+#: ../bonobo/bonobo-ui-toolbar.c:1117
+msgid "is floating"
+msgstr "é flotante"
+
+#: ../bonobo/bonobo-ui-toolbar.c:1118
+msgid "whether the toolbar is floating"
+msgstr "indica se a barra de ferramentas é flotante"
+
+#: ../bonobo/bonobo-ui-toolbar.c:1164
+msgid "Style of bevel around the toolbar"
+msgstr "Estilo do bisel en torno da barra de ferramentas"
+
+#: ../bonobo/bonobo-ui-util.c:602
+msgid "Could not display help for this application"
+msgstr "Non foi posíbel mostrar a axuda para este aplicativo"
+
+#: ../bonobo/bonobo-ui-util.c:644
+msgid "_Contents"
+msgstr "_Contidos"
+
+#: ../bonobo/bonobo-ui-util.c:645
+msgid "View help for this application"
+msgstr "Ver a axuda deste aplicativo"
+
+#: ../bonobo/bonobo-window.c:348
+msgid "Name of the window - used for configuration serialization."
+msgstr "Nome da xanela - usada para a seriación da configuración."
+
+#: ../bonobo/bonobo-zoomable.c:326
+msgid "Zoom level"
+msgstr "Nivel de zoom"
+
+#: ../bonobo/bonobo-zoomable.c:327
+msgid "The degree of enlargment"
+msgstr "O grao do aumento"
+
+#: ../bonobo/bonobo-zoomable.c:335
+msgid "Minimum Zoom level"
+msgstr "Nivel mínimo de zoom"
+
+#: ../bonobo/bonobo-zoomable.c:336
+msgid "The minimum degree of enlargment"
+msgstr "O grao mínimo de aumento"
+
+#: ../bonobo/bonobo-zoomable.c:344
+msgid "Maximum Zoom level"
+msgstr "Nivel máximo de zoom"
+
+#: ../bonobo/bonobo-zoomable.c:345
+msgid "The maximum degree of enlargment"
+msgstr "O grao máximo de aumento"
+
+#: ../bonobo/bonobo-zoomable.c:353
+msgid "Has a minimum Zoom level"
+msgstr "Ten un nivel mínimo de zoom"
+
+#: ../bonobo/bonobo-zoomable.c:354
+msgid "Whether we have a valid minimum zoom level"
+msgstr "Indica se hai un nivel mínimo de zoom correcto"
+
+#: ../bonobo/bonobo-zoomable.c:361
+msgid "Has a maximum Zoom level"
+msgstr "Ten un nivel de zoom máximo"
+
+#: ../bonobo/bonobo-zoomable.c:362
+msgid "Whether we have a valid maximum zoom level"
+msgstr "Indica se hai un nivel máximo de zoom correcto"
+
+#: ../bonobo/bonobo-zoomable.c:369
+msgid "Is continuous"
+msgstr "É continuo"
+
+#: ../bonobo/bonobo-zoomable.c:370
+msgid "Whether we zoom continuously (as opposed to jumps)"
+msgstr "Indica se se amplía progresivamente (e non a saltos)"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:1
+msgid "About this application"
+msgstr "Sobre este aplicativo"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:2
+msgid "Select"
+msgstr "Seleccionar"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:3
+msgid "_About..."
+msgstr "_Sobre..."
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:4
+msgid "_Edit"
+msgstr "_Editar"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:5
+#: ../tools/browser/bonobo-browser.xml.h:4
+msgid "_File"
+msgstr "_Ficheiro"
+
+#: ../samples/bonoboui/Bonobo_Sample_Hello.xml.h:6
+msgid "_Select"
+msgstr "_Seleccionar"
+
+#: ../samples/bonoboui/hello.c:65
+msgid "This does nothing; it is only a demonstration."
+msgstr "Isto non fai nada; só é unha demostración."
+
+#: ../samples/bonoboui/hello.c:147
+msgid "BonoboUI-Hello."
+msgstr "BonoboUI-Hello."
+
+#: ../samples/bonoboui/hello.c:219
+msgid "Gnome Hello"
+msgstr "Ola Gnome"
+
+#. Create Label and put it in the Button:
+#: ../samples/bonoboui/hello.c:274
+msgid "Hello, World!"
+msgstr "Ola Mundo!"
+
+#: ../samples/bonoboui/hello.c:314
+msgid "Cannot init libbonoboui code"
+msgstr "Non foi posíbel iniciar o código libbonoboui"
+
+#: ../samples/controls/bonobo-sample-controls.c:133
+msgid "Could not initialize Bonobo UI"
+msgstr "Non foi posíbel inicializar o Bonobo UI"
+
+#: ../tools/browser/bonobo-browser.desktop.in.h:1
+msgid "Bonobo Component Browser"
+msgstr "Navegador de compoñentes Bonobo"
+
+#: ../tools/browser/bonobo-browser.desktop.in.h:2
+msgid "Shows available Bonobo components"
+msgstr "Mostrar os compoñentes dispoñíbeis do Bonobo"
+
+#: ../tools/browser/bonobo-browser.xml.h:1
+msgid "About this program..."
+msgstr "Sobre este aplicativo..."
+
+#: ../tools/browser/bonobo-browser.xml.h:2
+msgid "Close the current window"
+msgstr "Pechar a xanela actual"
+
+#: ../tools/browser/bonobo-browser.xml.h:3
+msgid "Open a new window"
+msgstr "Abrir unha xanela nova"
+
+#: ../tools/browser/bonobo-browser.xml.h:5
+msgid "_Help"
+msgstr "A_xuda"
+
+#. Build the general tab
+#: ../tools/browser/component-details.c:103
+msgid "General"
+msgstr "Xeral"
+
+#: ../tools/browser/component-details.c:110
+#: ../tools/browser/component-list.c:389
+msgid "IID"
+msgstr "IID"
+
+#: ../tools/browser/component-details.c:111
+msgid "Location"
+msgstr "Localización"
+
+#. Build the details tab
+#: ../tools/browser/component-details.c:161
+msgid "Details"
+msgstr "Detalles"
+
+#: ../tools/browser/component-details.c:162
+msgid "Detailed Information"
+msgstr "Información detallada"
+
+#: ../tools/browser/component-list.c:358 ../tools/browser/window.c:283
+msgid "Active"
+msgstr "Activo"
+
+#: ../tools/browser/component-list.c:379
+msgid "Type"
+msgstr "Tipo"
+
+#: ../tools/browser/window.c:162
+msgid "Component Details"
+msgstr "Detalles do compoñente"
+
+#: ../tools/browser/window.c:208
+msgid "Bonobo Browser"
+msgstr "Navegador Bonobo"
+
+#: ../tools/browser/window.c:210
+msgid "Copyright 2001, The GNOME Foundation"
+msgstr "Copyright 2001, A Fundación GNOME"
+
+#: ../tools/browser/window.c:211
+msgid "Bonobo component browser"
+msgstr "Explorador de compoñentes Bonobo"
+
+#: ../tools/browser/window.c:214
+msgid "translator-credits"
+msgstr ""
+"Francisco Diéguez <frandieguez@ubuntu.com>, 2009, 2010;\n"
+"Suso Baleato <suso.baleato@xunta.es>"
+
+#. create the window
+#: ../tools/browser/window.c:240
+msgid "Component Browser"
+msgstr "Explorador de compoñentes"
+
+#. Fill out the tool bar
+#: ../tools/browser/window.c:280
+msgid "All"
+msgstr "Todo"
+
+#: ../tools/browser/window.c:286
+msgid "Inactive"
+msgstr "Inactivo"

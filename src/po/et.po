@@ -1,0 +1,383 @@
+# Libbonoboui eesti keele tõlge.
+# Estonian translation of Libbonoboui.
+#
+# Copyright (C) 2004-2006 Free Software Foundation, Inc.
+# Copyright (C) 2008 The Gnome Project.
+# This file is distributed under the same license as the libbonoboui package.
+#
+# Priit Laes <amd@tt.ee>, 2004.
+# Ivar Smolin <okul@linux.ee>, 2005, 2006, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Libbonoboui HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=bonobo&component=libbonoboui\n"
+"POT-Creation-Date: 2010-12-09 12:20+0000\n"
+"PO-Revision-Date: 2007-11-18 19:27+0200\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
+"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "corba factory"
+msgstr "corba factory"
+
+msgid "The factory pointer"
+msgstr "Factory viit"
+
+msgid "corba UI container"
+msgstr "corba kasutajaliidese konteiner"
+
+msgid "The User interface container"
+msgstr "Kasutajaliidese konteiner"
+
+msgid "Dock the toolbar"
+msgstr "Haagi tööriistariba külge"
+
+msgid "Undock the toolbar"
+msgstr "Haagi tööriistariba lahti"
+
+msgid "Shadow type"
+msgstr "Varju tüüp"
+
+msgid "Orientation"
+msgstr "Suund"
+
+msgid "Preferred width"
+msgstr "Eelistatud laius"
+
+msgid "Preferred height"
+msgstr "Eelistatud kõrgus"
+
+msgid "Select a file to open"
+msgstr "Vali fail, mida avada"
+
+msgid "Select files to open"
+msgstr "Vali failid, mida avada"
+
+msgid "Select a filename to save"
+msgstr "Vali salvestatava faili nimi"
+
+msgid "Event Forwarding"
+msgstr "Sündmuste edastamine"
+
+msgid "Whether X events should be forwarded"
+msgstr "Kas X'i sündmusi tuleb edastada"
+
+msgid "Name"
+msgstr "Nimi"
+
+msgid "Description"
+msgstr "Kirjeldus"
+
+msgid "Interfaces required"
+msgstr "Vajalikud liidesed"
+
+msgid ""
+"A NULL-terminated array of interfaces which a server must support in order "
+"to be listed in the selector. Defaults to \"IDL:Bonobo/Embeddable:1.0\" if "
+"no interfaces are listed"
+msgstr ""
+"NULL-lõpuga stringide massiiv liidestest, mida server peab toetama, et olla "
+"valikunimekirjas. Vaikimisi väärtuseks on \"IDL:Bonobo/Embeddable:1.0\" kui "
+"ühtegi liidest ei ole loetletud"
+
+msgid "Interface required entry"
+msgstr "Vajalike liideste kirje"
+
+msgid "One of the interfaces that's required"
+msgstr "Üks vajalikest liidestest"
+
+msgid "Visible"
+msgstr "Nähtav"
+
+msgid "_Show"
+msgstr "_Näita"
+
+msgid "_Hide"
+msgstr "_Peida"
+
+msgid "_View tooltips"
+msgstr "_Vaata tööriistavihjeid"
+
+msgid "Toolbars"
+msgstr "Tööriistaribad"
+
+msgid "toolbars"
+msgstr "tööriistaribad"
+
+msgid "Look"
+msgstr "Vaade"
+
+msgid "_Icon"
+msgstr "_Ikoon"
+
+msgid "_Text and Icon"
+msgstr "_Tekst ja ikoon"
+
+msgid "Text only"
+msgstr "Ainult tekst"
+
+msgid "_Priority text only"
+msgstr "_Ainult tähtis tekst"
+
+msgid "Debug"
+msgstr "Silumine"
+
+msgid "_Dump XML"
+msgstr "_XML-i väljastamine"
+
+msgid "Dump the entire UI's XML description to the console"
+msgstr "Väljastab konsoolile kogu kasutajaliidese XML kirjelduse"
+
+msgid "Configure UI"
+msgstr "Seadista kasutajaliidest"
+
+msgid "Gdk debugging flags to set"
+msgstr "Gdk silumislipud, mida seada"
+
+msgid "FLAGS"
+msgstr "LIPUD"
+
+msgid "Gdk debugging flags to unset"
+msgstr "Gdk silumislipud, mida nullida"
+
+msgid "X display to use"
+msgstr "Kasutatav X'i kuva"
+
+msgid "DISPLAY"
+msgstr "KUVA"
+
+msgid "X screen to use"
+msgstr "Kasutatav X'i ekraan"
+
+msgid "SCREEN"
+msgstr "EKRAAN"
+
+msgid "Make X calls synchronous"
+msgstr "X'i kutsungite muutmine sünkroonseks"
+
+msgid "Don't use X shared memory extension"
+msgstr "X'i jagatud mälu laiendust ei kasutata"
+
+msgid "Program name as used by the window manager"
+msgstr "Programmi nimi aknahalduri jaoks"
+
+msgid "NAME"
+msgstr "NIMI"
+
+msgid "Program class as used by the window manager"
+msgstr "Programmi liik aknahalduri jaoks"
+
+msgid "CLASS"
+msgstr "LIIK"
+
+msgid "Gtk+ debugging flags to set"
+msgstr "Gtk+ silumislipud, mida seada"
+
+msgid "Gtk+ debugging flags to unset"
+msgstr "Gtk+ silumislipud, mida nullida"
+
+msgid "Make all warnings fatal"
+msgstr "Kõigi hoiatuste muutmine saatuslikuks"
+
+msgid "Load an additional Gtk module"
+msgstr "Gtk lisamooduli laadimine"
+
+msgid "MODULE"
+msgstr "MOODUL"
+
+msgid "GTK+"
+msgstr "GTK+"
+
+msgid "Bonobo GUI support"
+msgstr "Bonobo kasutajaliidese tugi"
+
+msgid "B_oth"
+msgstr "_Mõlemad"
+
+msgid "T_ext"
+msgstr "T_ekst"
+
+msgid "Hide t_ips"
+msgstr "Sp_ikrite peitmine"
+
+msgid "Show t_ips"
+msgstr "Sp_ikrite näitamine"
+
+msgid "_Hide toolbar"
+msgstr "_Peida tööriistariba"
+
+msgid "Customi_ze"
+msgstr "K_ohanda"
+
+msgid "Customize the toolbar"
+msgstr "Kohanda tööriistariba"
+
+msgid "is floating"
+msgstr "on hõljuv"
+
+msgid "whether the toolbar is floating"
+msgstr "kas tööriistariba on hõljuv"
+
+msgid "Style of bevel around the toolbar"
+msgstr "Tööriistariba ümbritseva kaldserva stiil"
+
+msgid "Could not display help for this application"
+msgstr "Selle rakenduse abi pole võimalik kuvada"
+
+msgid "_Contents"
+msgstr "_Sisukord"
+
+msgid "View help for this application"
+msgstr "Kuva programmi abi"
+
+msgid "Name of the window - used for configuration serialization."
+msgstr "Akna nimi - kasutatakse seadistuse serialiseerimiseks."
+
+msgid "Zoom level"
+msgstr "Suurendusaste"
+
+msgid "The degree of enlargment"
+msgstr "Suurendamise aste"
+
+msgid "Minimum Zoom level"
+msgstr "Väikseim suurendusaste"
+
+msgid "The minimum degree of enlargment"
+msgstr "Väikseim suurendamise aste"
+
+msgid "Maximum Zoom level"
+msgstr "Suurim suurendusaste"
+
+msgid "The maximum degree of enlargment"
+msgstr "Suurim suurendamise aste"
+
+msgid "Has a minimum Zoom level"
+msgstr "On juba väikseimal suurendusastmel"
+
+msgid "Whether we have a valid minimum zoom level"
+msgstr "Kas meil on väikseim suurendusaste"
+
+msgid "Has a maximum Zoom level"
+msgstr "On juba suurimal suurendusastmel"
+
+msgid "Whether we have a valid maximum zoom level"
+msgstr "Kas meil on paikapidav suurim suurendustase"
+
+msgid "Is continuous"
+msgstr "On pidev"
+
+msgid "Whether we zoom continuously (as opposed to jumps)"
+msgstr "Kas me suurendame pidevalt (vastupidiselt hüpetele)"
+
+msgid "About this application"
+msgstr "Programmi kohta"
+
+msgid "Select"
+msgstr "Valik"
+
+msgid "_About..."
+msgstr "_Programmist..."
+
+msgid "_Edit"
+msgstr "_Redaktor"
+
+msgid "_File"
+msgstr "_Fail"
+
+msgid "_Select"
+msgstr "_Vali"
+
+msgid "This does nothing; it is only a demonstration."
+msgstr "See ei tee midagi; see on vaid näitlik selgitus."
+
+msgid "BonoboUI-Hello."
+msgstr "BonoboUI-Tere."
+
+msgid "Gnome Hello"
+msgstr "Gnome'i Tere"
+
+#  Create Label and put it in the Button:
+#. Create Label and put it in the Button:
+msgid "Hello, World!"
+msgstr "Tere, maailm!"
+
+msgid "Cannot init libbonoboui code"
+msgstr "libbonoboui koodi pole võimalik lähtestada"
+
+msgid "Could not initialize Bonobo UI"
+msgstr "Bonobo kasutajaliidest pole võimalik lähtestada"
+
+msgid "Bonobo Component Browser"
+msgstr "Bonobo komponendisirvija"
+
+msgid "Shows available Bonobo components"
+msgstr "Saadaolevate Bonobo komponentide näitamine"
+
+msgid "About this program..."
+msgstr "Programmist lähemalt..."
+
+msgid "Close the current window"
+msgstr "Käesoleva akna sulgemine"
+
+msgid "Open a new window"
+msgstr "Uue akna avamine"
+
+msgid "_Help"
+msgstr "A_bi"
+
+#. Build the general tab
+msgid "General"
+msgstr "Üldine"
+
+msgid "IID"
+msgstr "IID"
+
+msgid "Location"
+msgstr "Asukoht"
+
+#. Build the details tab
+msgid "Details"
+msgstr "Üksikasjad"
+
+msgid "Detailed Information"
+msgstr "Üksikasjalised andmed"
+
+msgid "Active"
+msgstr "Aktiivne"
+
+msgid "Type"
+msgstr "Tüüp"
+
+msgid "Component Details"
+msgstr "Komponendi üksikasjad"
+
+msgid "Bonobo Browser"
+msgstr "Bonobo sirvija"
+
+msgid "Copyright 2001, The GNOME Foundation"
+msgstr "Autoriõigused 2001, The GNOME Foundation"
+
+msgid "Bonobo component browser"
+msgstr "Bonobo komponendilehitseja"
+
+msgid "translator-credits"
+msgstr ""
+"Priit Laes <amd@tt.ee>, 2004.\n"
+"Ivar Smolin <okul@linux.ee>, 2005, 2006, 2008."
+
+#. create the window
+msgid "Component Browser"
+msgstr "Komponendisirvija"
+
+#. Fill out the tool bar
+msgid "All"
+msgstr "Kõik"
+
+msgid "Inactive"
+msgstr "Mitteaktiivne"
